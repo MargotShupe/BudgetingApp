@@ -1,10 +1,10 @@
-// react imports
+// reacts
 import { useEffect, useRef } from "react";
 
-// react router dom imports
+// rrd imports
 import { Form, useFetcher } from "react-router-dom";
 
-// Library imports
+// library imports
 import { CurrencyDollarIcon } from "@heroicons/react/24/solid";
 
 const AddBudgetForm = () => {
@@ -24,7 +24,6 @@ const AddBudgetForm = () => {
   return (
     <div className="form-wrapper">
       <h2 className="h3">Create budget</h2>
-
       <fetcher.Form method="post" className="grid-sm" ref={formRef}>
         <div className="grid-xs">
           <label htmlFor="newBudget">Budget Name</label>
@@ -52,7 +51,7 @@ const AddBudgetForm = () => {
         <input type="hidden" name="_action" value="createBudget" />
         <button type="submit" className="btn btn--dark" disabled={isSubmitting}>
           {isSubmitting ? (
-            <span>Submitting...</span>
+            <span>Submitting…</span>
           ) : (
             <>
               <span>Create budget</span>
@@ -64,5 +63,4 @@ const AddBudgetForm = () => {
     </div>
   );
 };
-
 export default AddBudgetForm;

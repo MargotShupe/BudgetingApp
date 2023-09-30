@@ -6,6 +6,7 @@ import { useFetcher } from "react-router-dom";
 
 // library imports
 import { PlusCircleIcon } from "@heroicons/react/24/solid";
+//import PropTypes from "prop-types";
 
 const AddExpenseForm = ({ budgets }) => {
   const fetcher = useFetcher();
